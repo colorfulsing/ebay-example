@@ -1,4 +1,4 @@
-scraper_image: gcr.io/answers-engine-cloud/scraper-worker@sha256:aea5f89cea181c1dd24397cac3285f58d0072b7ab91153786c1da3bc1176305f
+scraper_image: gcr.io/answers-engine-cloud/accord-scraper-worker-libreoffice
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
