@@ -27,6 +27,7 @@ listings.each do |listing|
 
     # enqueue more pages to the scrape job
     pages << {
+        fetch_type: 'browser',
         url: product['url'],
         page_type: 'details',
         vars: {  # adding vars to this page
