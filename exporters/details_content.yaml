@@ -1,4 +1,4 @@
-exporter_name: details_content_short
+exporter_name: details_content
 exporter_type: content
 page_type: details
 limit: 100 # max number of records in the export
