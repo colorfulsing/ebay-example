@@ -1,0 +1,6 @@
+exporter_name: products_json
+exporter_type: json 
+collection: products
+file_name: parts-$job_id-$scraper_id-%y$m%d.json
+write_mode: line # 'standard' or 'line'. Standard outputs a valid JSON array of documents. 'line' outputs one json document per line.
+order: asc # asc or desc. defaults to asc

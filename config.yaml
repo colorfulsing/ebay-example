@@ -8,3 +8,19 @@ parsers:
   - page_type: details
     file: ./parsers/details.rb
     disabled: false
+exporters:
+  - exporter_name: listings_json_short
+    exporter_type: json
+    collection: listings
+    write_mode: line # 'standard' or 'line'. Standard outputs a valid JSON array of documents. 'line' outputs one json document per line.
+    limit: 100 # max number of records in the export
+    offset: 10
+    order: asc # asc or desc. defaults to asc
+  - exporter_name: details_content_short
+    exporter_type: content
+    page_type: details
+    limit: 100 # max number of records in the export
+    offset: 10
+    order: desc # asc or desc. defaults to asc based on created_at?
+  - file: ./exporters/products_json.yaml
+  - file: ./exporters/details_content.yaml

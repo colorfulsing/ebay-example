@@ -1,0 +1,6 @@
+exporter_name: details_content_short
+exporter_type: content
+page_type: details
+limit: 100 # max number of records in the export
+offset: 10
+order: desc # asc or desc. defaults to asc based on created_at?
