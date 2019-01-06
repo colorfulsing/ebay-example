@@ -9,9 +9,9 @@ parsers:
     file: ./parsers/details.rb
     disabled: false
 exporters:
-  - exporter_name: listings_json_short
+  - exporter_name: products_json_short
     exporter_type: json
-    collection: listings
+    collection: products
     write_mode: line # 'standard' or 'line'. Standard outputs a valid JSON array of documents. 'line' outputs one json document per line.
     limit: 100 # max number of records in the export
     offset: 10
