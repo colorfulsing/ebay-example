@@ -1,0 +1,5 @@
+exporter_name: details_content
+exporter_type: content
+page_type: details
+ignore_extensions: false
+order: desc

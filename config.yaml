@@ -15,3 +15,5 @@ exporters:
     disabled: false
   - file: ./exporters/products_csv.yaml
     disabled: false
+  - file: ./exporters/details_content.yaml
+    disabled: false
