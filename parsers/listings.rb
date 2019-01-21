@@ -5,7 +5,7 @@ nokogiri = Nokogiri.HTML(content)
 listings = nokogiri.css('ul.b-list__items_nofooter li.s-item')
 
 # loop through the listings
-listings.each do |listing|
+listings.each_with_index do |listing, i|
     # initialize an empty hash
     product = {}
     
@@ -24,6 +24,7 @@ listings.each do |listing|
 
     # save the product to the outputs.
     outputs << product
+    
 
     # enqueue more pages to the scrape job
     pages << {
@@ -34,4 +35,10 @@ listings.each do |listing|
             price: product['price']
         }
       }
+      
+    max_records = 2
+    if i % max_records == 0
+        save_outputs(outputs)
+        save_pages(pages)
+    end
 end
