@@ -2,10 +2,10 @@
 nokogiri = Nokogiri.HTML(content)
 
 # get the seller username
-seller = nokogiri.at_css('.si-inner .mbg-nw')&.text
+seller = nokogiri.at_css('.si-inner .mbg-nw') && nokogiri.at_css('.si-inner .mbg-nw').text
 
 # get the seller's feedback 
-feedback = nokogiri.at_css('.si-inner #si-fb')&.text
+feedback = nokogiri.at_css('.si-inner #si-fb') && nokogiri.at_css('.si-inner #si-fb').text
 
 # save it into outputs
 outputs << {

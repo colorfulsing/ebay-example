@@ -10,10 +10,10 @@ listings.each do |listing|
     product = {}
     
     # extract the information into the product hash
-    product['title'] = listing.at_css('h3.s-item__title')&.text
+    product['title'] = listing.at_css('h3.s-item__title') && listing.at_css('h3.s-item__title').text
     
     # extract the price
-    product['price'] = listing.at_css('.s-item__price')&.text
+    product['price'] = listing.at_css('.s-item__price') && listing.at_css('.s-item__price').text
     
     # extract the listing URL
     item_link = listing.at_css('a.s-item__link')
