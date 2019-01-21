@@ -36,7 +36,7 @@ listings.each_with_index do |listing, i|
         }
       }
       
-    max_records = 2
+    max_records = 20
     if i % max_records == 0
         save_outputs(outputs)
         save_pages(pages)
