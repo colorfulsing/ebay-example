@@ -1,5 +1,5 @@
 seeder:
-  file: ./seeder/seeder.rb
+  file: ./seeder/seeder-wrong.rb
   disabled: false
 parsers:
   - page_type: listings
