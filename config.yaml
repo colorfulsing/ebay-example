@@ -1,9 +1,9 @@
 seeder:
-  file: ./seeder/seeder-wrong.rb
+  file: ./seeder/seeder.rb
   disabled: false
 parsers:
   - page_type: listings
-    file: ./parsers/listings.rb
+    file: ./parsers/listings-wrong.rb
     disabled: false
   - page_type: details
     file: ./parsers/details.rb
