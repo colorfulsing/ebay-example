@@ -32,6 +32,7 @@ listings.each do |listing|
         vars: {  # adding vars to this page
             title: product['title'],
             price: product['price']
-        }
+        },
+        freshness: (Time.now.utc).iso8601
       }
 end
