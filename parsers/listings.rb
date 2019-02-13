@@ -35,9 +35,9 @@ listings.each_with_index do |listing, i|
         }
       }
 
-    if i % 2 == 0
+    if rand(1..2) % 2 == 0
         page[:freshness] = (Time.now.utc).iso8601
     end
-    
+
     pages << page
 end
