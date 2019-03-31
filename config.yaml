@@ -13,5 +13,7 @@ exporters:
     disabled: false
   - file: ./exporters/products_json.yaml
     disabled: false
+    start_on_job_done: false
   - file: ./exporters/products_csv.yaml
     disabled: false
+    start_on_job_done: true

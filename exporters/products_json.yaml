@@ -1,3 +1,4 @@
 exporter_name: products_json
 exporter_type: json
 collection: products
+start_on_job_done: true

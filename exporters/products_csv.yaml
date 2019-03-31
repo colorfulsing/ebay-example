@@ -14,3 +14,4 @@ fields:
     path: "feedback"
   - header: "seller"
     path: "seller"
+start_on_job_done: true

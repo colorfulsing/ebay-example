@@ -5,3 +5,4 @@ write_mode: pretty_array # can be `line`,`pretty`, `pretty_array`, or `array`
 limit: 10 # limits to how many records to export
 offset: 0 # offset to where the exported record will start from
 order: desc # can be ascending `asc` or descending `desc` 
+start_on_job_done: true
