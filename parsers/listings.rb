@@ -28,7 +28,7 @@ listings.each do |listing|
     # enqueue more pages to the scrape job
     pages << {
         url: product['url'],
-        freshness: Time.now.utc.strftime('%FT%TZ'),
+        #freshness: Time.now.utc.strftime('%FT%TZ'),
         page_type: 'details',
         vars: {  # adding vars to this page
             title: product['title'],
