@@ -29,6 +29,8 @@ listings.each do |listing|
     pages << {
         url: product['url'],
         #freshness: Time.now.utc.strftime('%FT%TZ'),
+    freshness: Time.now.utc.strftime('%FT%TZ'),
+    fetch_type: 'browser'
         page_type: 'details',
         vars: {  # adding vars to this page
             title: product['title'],
