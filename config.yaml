@@ -1,3 +1,4 @@
+scraper_image: custom-energy-ytdownload
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
