@@ -1,4 +1,4 @@
-scraper_image: gcr.io/answers-engine-cloud/custom-energy-ytdownload:latest
+scraper_image: gcr.io/answers-engine-cloud/energy-scraper-worker-ytdownload:latest
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
