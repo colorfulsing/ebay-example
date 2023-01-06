@@ -1,3 +1,5 @@
+raise "This is an error"
+
 # initialize nokogiri
 nokogiri = Nokogiri.HTML(content)
 
