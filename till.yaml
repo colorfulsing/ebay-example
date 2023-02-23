@@ -17,4 +17,3 @@ interceptions:
   responds:
     code: 500
     body: ""
-proxy-file: /bla
