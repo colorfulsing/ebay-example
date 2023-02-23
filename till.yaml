@@ -1,5 +1,5 @@
-# proxy-type: standard_ca
-no-default-interceptions: true
+proxy-type: standard_ca
+# no-default-interceptions: true
 # interceptions:
 # - name: my_test
 #   disabled: false
