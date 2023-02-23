@@ -1,4 +1,4 @@
-proxy_type: standard_ca
+proxy-type: standard_ca
 interceptions:
 - name: my_test
   disabled: false
