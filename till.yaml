@@ -1,0 +1,19 @@
+port: 1234
+proxy_type: standard_ca
+interceptions:
+  - name: my_test
+    disabled: false
+    matches:
+      pattern: '^[^&#]+\.(jpeg)(&|#|$)'
+      method: GET
+    responds:
+      code: 200
+      body: ""
+  - name: my_test2
+    disabled: false
+    matches:
+      pattern: '^[^&#]+\.(png)(&|#|$)'
+      method: GET
+    responds:
+      code: 500
+      body: ""
