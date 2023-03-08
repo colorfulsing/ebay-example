@@ -6,6 +6,18 @@ pages << {
     #fetch_type: 'browser'
 }
 
+pages << {
+    page_type: 'browser_pages',
+    method: "GET",
+    url: "https://fetchtest.datahen.com/cat",
+    freshness: Time.now.utc.strftime('%FT%TZ'),
+    fetch_type: 'browser',
+    driver: {
+      pre_code: 'codeVars["sup"] = "Hello!";'
+      code: File.read('./seeder/browser_test.js')
+    }
+}
+
 # testing emptyu collections
 outputs << {
   _id: 'empty_collection',

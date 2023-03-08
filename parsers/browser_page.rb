@@ -1,0 +1,1 @@
+raise "BROWSER TESTS FAILED!" unless content =~ /ALL\s+TESTS\s+WERE\s+SUCCESSFUL/i
