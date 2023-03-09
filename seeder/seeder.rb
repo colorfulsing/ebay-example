@@ -13,7 +13,7 @@ pages << {
     freshness: Time.now.utc.strftime('%FT%TZ'),
     fetch_type: 'browser',
     driver: {
-      pre_code: 'codeVars["sup"] = "Hello!";'
+      pre_code: 'codeVars["sup"] = "Hello!";',
       code: File.read('./seeder/browser_test.js')
     }
 }
