@@ -8,7 +8,7 @@ parsers:
   - page_type: details
     file: ./parsers/details.rb
     disabled: false
-  - page_type: browser_page
+  - page_type: browser_pages
     file: ./parsers/browser_pages.rb
     disabled: false
 exporters:
