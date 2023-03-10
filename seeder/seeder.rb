@@ -15,7 +15,7 @@ pages << {
     driver: {
       name: 'non_stealth',
       pre_code: 'codeVars["sup"] = "Hello!";',
-      code: File.read('./seeder/browser_test.js')
+      code: File.read('./seeder/browser_test.js'),
       stealth: false
     }
 }
