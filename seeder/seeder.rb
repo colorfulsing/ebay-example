@@ -13,8 +13,24 @@ pages << {
     freshness: Time.now.utc.strftime('%FT%TZ'),
     fetch_type: 'browser',
     driver: {
+      name: 'non_stealth',
       pre_code: 'codeVars["sup"] = "Hello!";',
       code: File.read('./seeder/browser_test.js')
+      stealth: false
+    }
+}
+
+pages << {
+    page_type: 'browser_pages',
+    method: "GET",
+    url: "https://fetchtest.datahen.com/cat",
+    freshness: Time.now.utc.strftime('%FT%TZ'),
+    fetch_type: 'browser',
+    driver: {
+      name: 'stealth',
+      pre_code: 'codeVars["sup"] = "Hello!";',
+      code: File.read('./seeder/browser_test.js'),
+      stealth: true
     }
 }
 
