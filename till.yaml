@@ -1,0 +1,10 @@
+proxy-type: standard_ca
+interceptions:
+  - name: replace_css
+    disabled: false
+    matches:
+      pattern: '^[^&#]+\.(css)(&|#|$)'
+      method: GET
+    responds:
+      code: 200
+      body: ""
