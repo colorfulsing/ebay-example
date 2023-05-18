@@ -26,3 +26,6 @@ exporters:
     disabled: false
 finisher:
   file: ./finisher/finisher.rb
+schema_config:
+  file: ./schemas/config.yaml
+  disabled: false

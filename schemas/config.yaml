@@ -1,0 +1,4 @@
+schemas:
+  - file: ./schemas/listings.json
+    collections: "listings"
+    disabled: false

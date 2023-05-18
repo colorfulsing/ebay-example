@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "product_name":         { "type": "number" },
+    "dorman_part_number":   { "type": "string" }
+  },
+  "required": ["product_name"]
+}
